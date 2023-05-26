@@ -53,20 +53,18 @@ class ProfileFragment : Fragment() {
             intent.action = Intent.ACTION_GET_CONTENT
             launcher.launch(intent)
         }
-
-        val launcher = registerForActivityResult(
-            ActivityResultContracts.StartActivityForResult()
-        ) { result: ActivityResult ->
-            if (result.resultCode == Activity.RESULT_OK
-                && result.data != null
-            ) {
-                val photoUri: Uri? = result.data?.data
-                prefTasks.imageSave(photoUri.toString())
-                binding.run {
-                    prefTasks.imageSave(photoUri.toString())
-                    ivAvatar.run { loadImage(photoUri.toString()) }
-                }
-            }
+//        registerForActivityResult(
+//            ActivityResultContracts.StartActivityForResult()
+//        ) { result: ActivityResult ->
+//            if (result.resultCode == Activity.RESULT_OK
+//                && result.data != null
+//            ) {
+//                val photoUri: Uri? = result.data?.data
+//                prefTasks.imageSave(photoUri.toString())
+//                binding.run {
+//                    prefTasks.imageSave(photoUri.toString())
+//                    ivAvatar.run { loadImage(photoUri.toString()) }
+//                }
+//            }
         }
     }
-}
