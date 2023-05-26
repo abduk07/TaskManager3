@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TaskManager3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Home">Home</string>
+    <string name="Dashboard">Dashboard</string>
+    <string name="Profile">Profile</string>
+    <string name="Notificatiion">Notificatiion</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="save">SAVE</string>
+    <string name="skip">Skip</string>
+</resources>
